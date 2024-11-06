@@ -192,11 +192,11 @@ section {
 }
 .slideshow ul li .slideshow-controls a.prev {
 	left: 0;
-	background-image: url(Bilder/slideshow.jpg);
+	background-image: url(Bilder/arrow_prev.svg);
 }
 .slideshow ul li .slideshow-controls a.next {
 	right: 0;
-	background-image: url();
+	background-image: url(Bilder/arrow_next.svg);
 }
 
 .card {
