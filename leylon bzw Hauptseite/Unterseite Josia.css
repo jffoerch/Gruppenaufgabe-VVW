@@ -2,15 +2,12 @@
 
 body {
 
-   font-family: Georgia, serif;
-
-   color: #e0dacd;
-
-
+   font-family: 'Montserrat', sans-serif;
+   color: #d9e2ec; /* Hellerer Blauton für Text */
+   background-color: rgba(15, 20, 40, 0.9); /* Dunkelblauer Hintergrund */
    margin: 0;
-
-   padding: o;
-
+   padding: 0;
+  
    background-image: url('https://p6.focus.de/img/fotos/id_136644385/porsche-911-gt3-rs-5.jpg?im=Crop%3D%28203%2C120%2C1397%2C940%29%3BResize%3D%28800%2C538%29&impolicy=perceptual&quality=mediumHigh&hash=f103e8fa6c500f67046bd5b5406f0366d909fa573ffc64ccfa74530e50393984');
 
    background-size: cover;
@@ -25,21 +22,13 @@ body {
 /* Halbtransparente Überlagerung für Lesbarkeit */
 
 body::before {
-
    content: "";
-
    position: fixed;
-
    top: 0;
-
    left: 0;
-
    width: 100%;
-
    height: 100%;
-
-   background-color: rgba(10, 36, 26, 0.7);
-
+   background-color: rgba(15, 20, 40, 0.9);
    z-index: -1;
 
 }
