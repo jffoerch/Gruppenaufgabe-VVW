@@ -65,7 +65,7 @@ header h1 {
 
    font-size: 2.5em;
 
-   color: #e0dacd;
+   color: #d9e2ec;
 
 }
 
@@ -74,7 +74,7 @@ header p {
 
    font-size: 1em;
 
-   color: #c5c8b5;
+   color: #d9e2ec;
 
 }
 
@@ -89,15 +89,15 @@ nav {
 
    gap: 0.5em;
 
-   background-color: rgba(15, 50, 37, 0.9);
+   background-color: rgba(15, 20, 40, 0.9);
 
    padding: 1em;
 
    margin: 0;
 
-   border-top: 1px solid #425544;
+   border-top: 1px solid #d9e2ec;
 
-   border-bottom: 1px solid #425544;
+   border-bottom: 1px solid #d9e2ec;
 
 }
 
@@ -130,13 +130,13 @@ nav a {
 
    padding: 0.5em 1em;
 
-   background-color: rgba(10, 36, 26, 0.8);
+   background-color: rgba(15, 20, 40, 0.9);
 
-   color: #e0dacd;
+   color: #d9e2ec;
 
    text-decoration: none;
 
-   border: 1px solid #425544;
+   border: 1px solid #d9e2ec;
 
    transition: background-color 0.3s, color 0.3s;
 
@@ -145,9 +145,9 @@ nav a {
 
 nav a:hover {
 
-   background-color: #425544;
+   background-color: #d9e2ec;
 
-   color: #e0dacd;
+   color: #d9e2ec;
 
 }
 
@@ -158,7 +158,7 @@ label {
 
    font-size: 1.2em;
 
-   color: #8ab07b;
+   color: #d9e2ec;
 
    display: block;
 
@@ -177,23 +177,23 @@ input[type="date"] {
 
    max-width: 300px;
 
-   color: #e0dacd;
+   color: #d9e2ec;
 
-   background-color: #1f3b2b;
+   background-color: #d9e2ec;
 
 }
 
 
 input[type="date"]::placeholder {
 
-   color: #8ab07b;
+   color: #d9e2ec;
 
 }
 
 
 input[type="date"]:focus {
 
-   border-color: #8ab07b;
+   border-color: #d9e2ec;
 
 }
 
@@ -213,15 +213,15 @@ aside {
 
    width: 20%;
 
-   color: #c5c8b5;
+   color: #d9e2ec;
 
    padding: 1em;
 
    margin-right: 1em;
 
-   background-color: rgba(10, 36, 26, 0.8);
+   background-color: rgba(15, 20, 40, 0.9);
 
-   border: 1px solid #425544;
+   border: 1px solid #d9e2ec;
 
 }
 
@@ -232,9 +232,9 @@ article {
 
    padding: 1em;
 
-   background-color: rgba(10, 36, 26, 0.8);
+   background-color: rgba(15, 20, 40, 0.9);
 
-   border: 1px solid #425544;
+   border: 1px solid #d9e2ec;
 
 }
 
@@ -245,7 +245,7 @@ img {
 
    height: auto;
 
-   border: 2px solid #4a5a4f;
+   border: 2px solid #d9e2ec;
 
 }
 
@@ -263,7 +263,7 @@ video {
 
 a {
 
-   color: #c5c8b5;
+   color: #d9e2ec;
 
    text-decoration: none;
 
@@ -272,7 +272,7 @@ a {
 
 a:hover {
 
-   color: #e0dacd;
+   color: #d9e2ec;
 
 }
 /* Dropdown-Grundstil */
@@ -288,22 +288,22 @@ a:hover {
 
    gap: 0.5em;
 
-   background-color: rgba(15, 50, 37, 0.9);
+   background-color: rgba(15, 20, 40, 0.9);
 
    padding: 1em;
 
    margin: 0;
 
-   border-top: 1px solid #425544;
+   border-top: 1px solid #d9e2ec;
 
-   border-bottom: 1px solid #425544
+   border-bottom: 1px solid #d9e2ec;
 
 }
 
 .dropdown-content {
    display: none;
    position: absolute;
-   background-color: rgba(10, 36, 26, 0.9);
+   background-color: rgba(15, 20, 40, 0.9);
    min-width: 250px;
    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
    z-index: 1;
@@ -341,7 +341,7 @@ input[type="date"], input[type="submit"] {
 
    padding: 0.5em 1em;
 
-   background-color: rgba(10, 36, 26, 0.8);
+   background-color: rgba(15, 20, 40, 0.9);
 
    color: #e0dacd;
 
@@ -366,7 +366,7 @@ input[type="date"], input[type="submit"] {
 
    position: absolute;
 
-   background-color: rgba(10, 36, 26, 0.9);
+   background-color: rgba(15, 20, 40, 0.9);
 
    min-width: 250px; /* Passe die Breite nach Bedarf an */
 
