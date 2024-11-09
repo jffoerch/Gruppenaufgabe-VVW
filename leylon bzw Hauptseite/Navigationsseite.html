@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML5 Neue Elemente</title>
+   <link rel="stylesheet" href="Navigationsseite.css">
+
+
+</head>
+
+
+
+
+
+<!-- <style>
+
+/* Allgemeine Einstellungen */
+
+body {
+
+   font-family: Georgia, serif;
+
+   color: #e0dacd;
+
+
+   margin: 0;
+
+   padding: o;
+
+   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-3-scaled.jpg?class=xl');
+
+   background-size: cover;
+
+   background-attachment: fixed;
+
+   background-position: center;
+
+}
+
+
+/* Halbtransparente Überlagerung für Lesbarkeit */
+
+body::before {
+
+   content: "";
+
+   position: fixed;
+
+   top: 0;
+
+   left: 0;
+
+   width: 100%;
+
+   height: 100%;
+
+   background-color: rgba(10, 36, 26, 0.7);
+
+   z-index: -1;
+
+}
+
+
+/* Styling für Header mit Banner-Bild */
+
+header {
+
+   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-27-scaled.jpg?class=ml');
+
+   background-size: cover;
+
+   background-position: center;
+
+   background-blend-mode: overlay;
+
+   background-color: rgba(10, 36, 26, 0.7);
+
+   color: #e0dacd;
+
+   padding: 10em;
+
+   text-align: center;
+
+   margin-bottom: 1em;
+
+}
+
+
+header h1 {
+
+   margin: 0;
+
+   font-size: 2.5em;
+
+   color: #e0dacd;
+
+}
+
+
+header p {
+
+   font-size: 1em;
+
+   color: #c5c8b5;
+
+}
+
+
+/* Navigation als horizontale Leiste */
+
+nav {
+
+   display: flex;
+
+   justify-content: center;
+
+   gap: 0.5em;
+
+   background-color: rgba(15, 50, 37, 0.9);
+
+   padding: 1em;
+
+   margin: 0;
+
+   border-top: 1px solid #425544;
+
+   border-bottom: 1px solid #425544;
+
+}
+
+
+nav ul {
+
+   list-style: none;
+
+   display: flex;
+
+   padding: 0;
+
+   margin: 0;
+
+   gap: 0.5em;
+
+}
+
+
+nav li {
+
+   margin: 0;
+
+}
+
+
+nav a {
+
+   display: inline-block;
+
+   padding: 0.5em 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   color: #e0dacd;
+
+   text-decoration: none;
+
+   border: 1px solid #425544;
+
+   transition: background-color 0.3s, color 0.3s;
+
+}
+
+
+nav a:hover {
+
+   background-color: #425544;
+
+   color: #e0dacd;
+
+}
+
+
+/* Stil für das Input-Feld (Typ Datum) */
+
+label {
+
+   font-size: 1.2em;
+
+   color: #8ab07b;
+
+   display: block;
+
+   margin-bottom: 0.5em;
+
+}
+
+
+input[type="date"] {
+
+   font-size: 1em;
+
+   padding: 0.5em;
+
+   width: 100%;
+
+   max-width: 300px;
+
+   color: #e0dacd;
+
+   background-color: #1f3b2b;
+
+}
+
+
+input[type="date"]::placeholder {
+
+   color: #8ab07b;
+
+}
+
+
+input[type="date"]:focus {
+
+   border-color: #8ab07b;
+
+}
+
+
+/* Weitere Layout-Elemente */
+
+main {
+
+   display: flex;
+
+   padding: 1em;
+
+}
+
+
+aside {
+
+   width: 20%;
+
+   color: #c5c8b5;
+
+   padding: 1em;
+
+   margin-right: 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   border: 1px solid #425544;
+
+}
+
+
+article {
+
+   width: 75%;
+
+   padding: 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   border: 1px solid #425544;
+
+}
+
+
+img {
+
+   max-width: 100%;
+
+   height: auto;
+
+   border: 2px solid #4a5a4f;
+
+}
+
+
+video {
+
+   width: 100%;
+
+   height: auto;
+
+}
+
+
+/* Link Style */
+
+a {
+
+   color: #c5c8b5;
+
+   text-decoration: none;
+
+}
+
+
+a:hover {
+
+   color: #e0dacd;
+
+}
+/* Dropdown-Grundstil */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropbtn {
+   display: flex;
+
+   justify-content: center;
+
+   gap: 0.5em;
+
+   background-color: rgba(15, 50, 37, 0.9);
+
+   padding: 1em;
+
+   margin: 0;
+
+   border-top: 1px solid #425544;
+
+   border-bottom: 1px solid #425544
+
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgba(10, 36, 26, 0.9);
+   min-width: 250px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   padding: 1em;
+}
+
+.dropdown-content form {
+   display: flex;
+   flex-direction: column;
+}
+
+input[type="date"], input[type="submit"] {
+   margin: 0.5em 0;
+   padding: 0.5em;
+}
+
+/* Dropdown anzeigen bei Hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+/* Dropdown-Styling */
+
+.dropdown {
+
+   position: relative;
+
+   display: flex;
+
+}
+
+
+.dropbtn {
+
+   display: flex;
+
+   padding: 0.5em 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   color: #e0dacd;
+
+   text-decoration: none;
+
+   border: 1px solid #425544;
+
+   transition: background-color 0.3s, color 0.3s;
+
+   width: 100%; /* Gleiche Breite wie die anderen Links */
+
+   text-align: center;
+
+}
+
+
+/* Dropdown-Inhalte */
+
+.dropdown-content {
+
+   display: none;
+
+   position: absolute;
+
+   background-color: rgba(10, 36, 26, 0.9);
+
+   min-width: 250px; /* Passe die Breite nach Bedarf an */
+
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+   z-index: 1;
+
+   padding: 1em;
+
+   top: 100%; /* Hier wird das Dropdown-Menü direkt unter dem Button angezeigt */
+   right: -25%; /* Stellt sicher, dass das Dropdown mit dem Button ausgerichtet ist */
+
+   flex-direction: column; /* Stellt sicher, dass der Inhalt vertikal angeordnet ist */
+   justify-content: center; /* Zentriert den Inhalt vertikal */
+   align-items: center; /* Zentriert den Inhalt horizontal */
+
+
+}
+
+
+/* Styling der Dropdown-Links */
+
+.dropdown-content form {
+
+/*    display: flex;
+
+   flex-direction: column; */
+
+   margin: 0;
+   text-align: center; /* Wenn du möchtest, dass das Formular selbst auch zentriert wird */
+}
+
+
+
+input[type="date"], input[type="submit"] {
+
+   margin: 0.5em 0;
+
+   padding: 0.5em;
+
+}
+
+
+/* Dropdown anzeigen beim Hovern */
+
+.dropdown:hover .dropdown-content {
+
+   display: flex;
+
+}
+
+      /* Container für die Collage */
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Genau drei Spalten, die sich flexibel anpassen */
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-items: center;
+        }
+
+        /* Container für jedes Bild */
+        .collage-item {
+            width: 100%; /* Feste Breite für das Zuschneiden */
+            aspect-ratio: 1; /* Stellt sicher, dass die Bilder quadratisch bleiben */
+            overflow: visible; /* Versteckt Teile des Bildes, die über den Rahmen hinausgehen */
+            position: relative;
+            
+        }
+
+        /* Bildstil */
+        .collage-item img {
+            width: 100%; /* passt Bild an Container an */
+            height: 100%;
+            object-fit:cover;
+            transition: all 0.8s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Hover-Effekt */
+        .collage-item:hover img {
+            width: auto; /* Stellt ursprüngliche Bildgröße wieder her */
+            height: auto;
+            max-width: 80vw; /* Begrenzung der Breite auf 80% des Viewports */
+            max-height: 80vh; /* Begrenzung der Höhe auf 80% des Viewports */
+            top: 50%; /* Mitte des Bildschirms */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Positioniert das Bild */
+            z-index: 10; /* Stellt sicher, dass das Bild über anderen Elementen liegt */
+        }
+
+</style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+   <!-- Header: Kopfleiste der Seite -->
+   <header>
+       <h1>Autopräsentationen</h1>
+       <p>Stil, Eleganz, Klasse</p>
+   </header>
+
+   <!-- Navigation: Navigationsbereich der Seite -->
+
+   <nav>
+       <ul>
+           <li><a href="#Unterseite Josia.html">Porsche 992 GT3 RS</a></li>
+           <li><a href="#Unterseite Vivian.html">Mazda Miata</a></li>
+           <li><a href="#Unterseite Leyla.html">Auto 1</a></li>
+           <li><a href="#Unterseite Niklas.html">Auto 2</a></li>
+
+           <!-- Dropdown Menü für Terminvereinbarung -->
+           <li class="dropdown">
+               <a href="javascript:void(0)" class="dropbtn">Terminvereinbarung</a>
+               <div class="dropdown-content">
+                   <form>
+                       <label for="termin">Wähle einen Termin:</label>
+                       <input type="date" id="termin" name="termin">
+                       <input type="submit" value="Termin buchen">
+                   </form>
+               </div>
+           </li>
+
+           <li><a href="#section3">Mehr zum Thema</a></li>
+       </ul>
+   </nav>
+
+
+   <!-- Hauptinhalt der Seite -->
+   <main>
+
+       <!-- Seitlicher Bereich -->
+       //leer weil nicht benötigt
+
+       <!-- Hauptartikelbereich -->
+       <article>
+           <section id="section1">
+               <h2>PORSCHE</h2>
+
+               <p>Porsche ist die Marke für Menschen, die ihren Träumen folgen. Diesen Leitsatz trägt das Unternehmen in seinen Genen, denn bereits Firmengründer Ferry Porsche sagte: „Am Anfang schaute ich mich um, konnte aber den Wagen, von dem ich träumte, nicht finden. Also beschloss ich, ihn mir selbst zu bauen.“</p>
+
+               <p>Die Sportwagenmarke Porsche hat in der Automobilwelt Klang. Denn der typische Sound der leistungsstarken Motoren verspricht Kraft und Dynamik. Namensgeber der Marke war der weltbekannte Konstrukteur Ferdinand Porsche. Das Familienunternehmen Porsche hat mit Sportwagentypen wie dem 356 und 911 oder mit Rennwagen wie dem 550 Spyder und dem 917 automobile Ikonen geschaffen, die Ausdruck purer Leidenschaft sind. Porsche Fahrzeuge aus Zuffenhausen und Leipzig erfreuen sich in aller Welt einer außerordentlichen Nachfrage, sind für viele Automobilliebhaber ein wahrer Traum. Seit dem 1. August 2012 entfaltet die überaus starke Marke unter dem Dach des Volkswagen Konzerns ihre Kraft. Mit der Übernahme der restlichen 50,1 Prozent der Anteile der Dr. Ing. h.c. F. Porsche AG von der Porsche SE erfolgte die Schaffung eines integrierten Automobilkonzerns, der durch den Abschluss einer Grundlagenvereinbarung am 13. August 2009 auf den Weg gebracht worden war.</p>
+           </section>
+
+           <section id="section2">
+               <h2>Turbo</h2>
+               <p>Die Geschichte der Porsche Turbo-Modelle begann 1974 mit der Einführung des ersten Porsche 911 Turbo, intern als Porsche 930 bezeichnet. Ursprünglich für den Motorsport entwickelt, entschied sich Porsche, das Modell auch in einer straßenzugelassenen Version anzubieten, da die Nachfrage nach leistungsstarken Sportwagen wuchs. Der 911 Turbo war einer der ersten Serienwagen mit Turbolader und setzte neue Maßstäbe in Leistung und Design. Der leistungsstarke 3,0-Liter-Sechszylinder-Boxermotor, der 260 PS erzeugte, sorgte für ein beeindruckendes Fahrerlebnis. Markant war auch der große Heckspoiler, der nicht nur zum ikonischen Design beitrug, sondern dem Fahrzeug auch Stabilität bei hohen Geschwindigkeiten verlieh.
+
+Im Jahr 1978 folgte ein bedeutendes Upgrade, als Porsche einen größeren 3,3-Liter-Motor einführte und die Leistung auf 300 PS erhöhte. Diese Verbesserungen festigten den Ruf des 911 Turbo als Hochleistungs-Sportwagen und symbolisierten die Innovationskraft von Porsche. Die Turbo-Technologie wurde über die Jahre weiterentwickelt und immer wieder verbessert, was die Modelle nicht nur schneller, sondern auch fahrstabiler machte.
+
+In den folgenden Jahrzehnten verfeinerte Porsche die Turbo-Modelle kontinuierlich und integrierte neue Technologien wie Allradantrieb und modernisierte Fahrassistenzsysteme. Der 911 Turbo bleibt bis heute ein Aushängeschild für die Marke und steht für eine perfekte Kombination aus Luxus, Leistung und fortschrittlicher Technik. Die Turbo-Modelle sind auch heute ein zentrales Element der Porsche-DNA und setzen Standards für Geschwindigkeit und Innovation in der Automobilbranche.</p>
+           </section>
+
+           <section id="section3">
+               <h2>Mehr zum Thema</h2>
+               <p>Porsche Offiziell</p>
+               <a>https://www.porsche.com/germany/?cs_redirect=1</a>
+               <p>Mehr zum 993</p>
+               <a>https://www.elferspot.com/de/magazin/porsche-993-im-portrait/</a>
+               <p>Porsche in der Volkswagen Group</p>
+               <a>https://www.volkswagen-group.com/de/porsche-16022</a>
+               <p>Dieses Fahrzeug</p>
+               <a>https://www.elferspot.com/de/fahrzeug/porsche-993-turbo-1996-4159581/</a>
+           </section>
+
+           <section id="section4">
+               <h2>Details</h2>
+               <p>Zum Verkauf steht ein einzigartiger Porsche 993 Turbo in „S“ Optik. Die Technik von dem Fahrzeug wurde von uns vor 10 Jahren komplett überholt. Seither stand er die meiste Zeit in einer privaten Sammlung.</p>
+           </section>
+
+           <section id="section7">
+             <h2>Quellenverzeichnis</h2>
+               <ul>
+                 <li><a>https://www.elferspot.com/de/fahrzeug/porsche-993-turbo-1996-4159581/</a></li>
+                 <li><a>https://www.elferspot.com/de/magazin/porsche-993-im-portrait/</a></li>
+                 <li><a>https://www.volkswagen-group.com/de/porsche-16022</a></li>
+                 <li><a>https://www.porsche.com/germany/?cs_redirect=1</a></li>
+               </ul>
+           </section>
+
+      <!--     <section id="section8">
+               <h2>Terminvereinbarung
+               </h2>
+               <p>Bei Interesse vereinbaren Sie hier einen Termin mit uns. Wir freuen uns auf Sie!</p>
+               <form>
+                 <label for="termin">Wähle einen Termin:</label>
+                 <input type="date" id="termin" name="termin">
+                 <input type="submit" value="Termin buchen">
+               </form> -->
+
+
+           </section>
+
+           <footer>
+               <p>Impressum: Erstellt von Carla und Leyla - HTML5 Beispielseite. Erweitert von Leyla, Vivian, Niklas und Josia</p>
+               <p>&copy; November 2024</p>
+           </footer>
+       </article>
+   </main>
+
+</body>
+</html>
