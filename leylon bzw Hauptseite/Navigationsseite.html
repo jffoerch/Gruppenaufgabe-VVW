@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Faszination Auto</title>
+   <link rel="stylesheet" href="Navigationsseite.css">
+
+
+</head>
+
+
+
+
+
+<!-- <style>
+
+/* Allgemeine Einstellungen */
+
+body {
+
+   font-family: Georgia, serif;
+
+   color: #e0dacd;
+
+
+   margin: 0;
+
+   padding: o;
+
+   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-3-scaled.jpg?class=xl');
+
+   background-size: cover;
+
+   background-attachment: fixed;
+
+   background-position: center;
+
+}
+
+
+/* Halbtransparente Überlagerung für Lesbarkeit */
+
+body::before {
+
+   content: "";
+
+   position: fixed;
+
+   top: 0;
+
+   left: 0;
+
+   width: 100%;
+
+   height: 100%;
+
+   background-color: rgba(10, 36, 26, 0.7);
+
+   z-index: -1;
+
+}
+
+
+/* Styling für Header mit Banner-Bild */
+
+header {
+
+   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-27-scaled.jpg?class=ml');
+
+   background-size: cover;
+
+   background-position: center;
+
+   background-blend-mode: overlay;
+
+   background-color: rgba(10, 36, 26, 0.7);
+
+   color: #e0dacd;
+
+   padding: 10em;
+
+   text-align: center;
+
+   margin-bottom: 1em;
+
+}
+
+
+header h1 {
+
+   margin: 0;
+
+   font-size: 2.5em;
+
+   color: #e0dacd;
+
+}
+
+
+header p {
+
+   font-size: 1em;
+
+   color: #c5c8b5;
+
+}
+
+
+/* Navigation als horizontale Leiste */
+
+nav {
+
+   display: flex;
+
+   justify-content: center;
+
+   gap: 0.5em;
+
+   background-color: rgba(15, 50, 37, 0.9);
+
+   padding: 1em;
+
+   margin: 0;
+
+   border-top: 1px solid #425544;
+
+   border-bottom: 1px solid #425544;
+
+}
+
+
+nav ul {
+
+   list-style: none;
+
+   display: flex;
+
+   padding: 0;
+
+   margin: 0;
+
+   gap: 0.5em;
+
+}
+
+
+nav li {
+
+   margin: 0;
+
+}
+
+
+nav a {
+
+   display: inline-block;
+
+   padding: 0.5em 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   color: #e0dacd;
+
+   text-decoration: none;
+
+   border: 1px solid #425544;
+
+   transition: background-color 0.3s, color 0.3s;
+
+}
+
+
+nav a:hover {
+
+   background-color: #425544;
+
+   color: #e0dacd;
+
+}
+
+
+/* Stil für das Input-Feld (Typ Datum) */
+
+label {
+
+   font-size: 1.2em;
+
+   color: #8ab07b;
+
+   display: block;
+
+   margin-bottom: 0.5em;
+
+}
+
+
+input[type="date"] {
+
+   font-size: 1em;
+
+   padding: 0.5em;
+
+   width: 100%;
+
+   max-width: 300px;
+
+   color: #e0dacd;
+
+   background-color: #1f3b2b;
+
+}
+
+
+input[type="date"]::placeholder {
+
+   color: #8ab07b;
+
+}
+
+
+input[type="date"]:focus {
+
+   border-color: #8ab07b;
+
+}
+
+
+/* Weitere Layout-Elemente */
+
+main {
+
+   display: flex;
+
+   padding: 1em;
+
+}
+
+
+aside {
+
+   width: 20%;
+
+   color: #c5c8b5;
+
+   padding: 1em;
+
+   margin-right: 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   border: 1px solid #425544;
+
+}
+
+
+article {
+
+   width: 75%;
+
+   padding: 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   border: 1px solid #425544;
+
+}
+
+
+img {
+
+   max-width: 100%;
+
+   height: auto;
+
+   border: 2px solid #4a5a4f;
+
+}
+
+
+video {
+
+   width: 100%;
+
+   height: auto;
+
+}
+
+
+/* Link Style */
+
+a {
+
+   color: #c5c8b5;
+
+   text-decoration: none;
+
+}
+
+
+a:hover {
+
+   color: #e0dacd;
+
+}
+/* Dropdown-Grundstil */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+
+.dropbtn {
+   display: flex;
+
+   justify-content: center;
+
+   gap: 0.5em;
+
+   background-color: rgba(15, 50, 37, 0.9);
+
+   padding: 1em;
+
+   margin: 0;
+
+   border-top: 1px solid #425544;
+
+   border-bottom: 1px solid #425544
+
+}
+
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgba(10, 36, 26, 0.9);
+   min-width: 250px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   padding: 1em;
+}
+
+.dropdown-content form {
+   display: flex;
+   flex-direction: column;
+}
+
+input[type="date"], input[type="submit"] {
+   margin: 0.5em 0;
+   padding: 0.5em;
+}
+
+/* Dropdown anzeigen bei Hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+/* Dropdown-Styling */
+
+.dropdown {
+
+   position: relative;
+
+   display: flex;
+
+}
+
+
+.dropbtn {
+
+   display: flex;
+
+   padding: 0.5em 1em;
+
+   background-color: rgba(10, 36, 26, 0.8);
+
+   color: #e0dacd;
+
+   text-decoration: none;
+
+   border: 1px solid #425544;
+
+   transition: background-color 0.3s, color 0.3s;
+
+   width: 100%; /* Gleiche Breite wie die anderen Links */
+
+   text-align: center;
+
+}
+
+
+/* Dropdown-Inhalte */
+
+.dropdown-content {
+
+   display: none;
+
+   position: absolute;
+
+   background-color: rgba(10, 36, 26, 0.9);
+
+   min-width: 250px; /* Passe die Breite nach Bedarf an */
+
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+   z-index: 1;
+
+   padding: 1em;
+
+   top: 100%; /* Hier wird das Dropdown-Menü direkt unter dem Button angezeigt */
+   right: -25%; /* Stellt sicher, dass das Dropdown mit dem Button ausgerichtet ist */
+
+   flex-direction: column; /* Stellt sicher, dass der Inhalt vertikal angeordnet ist */
+   justify-content: center; /* Zentriert den Inhalt vertikal */
+   align-items: center; /* Zentriert den Inhalt horizontal */
+
+
+}
+
+
+/* Styling der Dropdown-Links */
+
+.dropdown-content form {
+
+/*    display: flex;
+
+   flex-direction: column; */
+
+   margin: 0;
+   text-align: center; /* Wenn du möchtest, dass das Formular selbst auch zentriert wird */
+}
+
+
+
+input[type="date"], input[type="submit"] {
+
+   margin: 0.5em 0;
+
+   padding: 0.5em;
+
+}
+
+
+/* Dropdown anzeigen beim Hovern */
+
+.dropdown:hover .dropdown-content {
+
+   display: flex;
+
+}
+
+      /* Container für die Collage */
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Genau drei Spalten, die sich flexibel anpassen */
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-items: center;
+        }
+
+        /* Container für jedes Bild */
+        .collage-item {
+            width: 100%; /* Feste Breite für das Zuschneiden */
+            aspect-ratio: 1; /* Stellt sicher, dass die Bilder quadratisch bleiben */
+            overflow: visible; /* Versteckt Teile des Bildes, die über den Rahmen hinausgehen */
+            position: relative;
+            
+        }
+
+        /* Bildstil */
+        .collage-item img {
+            width: 100%; /* passt Bild an Container an */
+            height: 100%;
+            object-fit:cover;
+            transition: all 0.8s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Hover-Effekt */
+        .collage-item:hover img {
+            width: auto; /* Stellt ursprüngliche Bildgröße wieder her */
+            height: auto;
+            max-width: 80vw; /* Begrenzung der Breite auf 80% des Viewports */
+            max-height: 80vh; /* Begrenzung der Höhe auf 80% des Viewports */
+            top: 50%; /* Mitte des Bildschirms */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Positioniert das Bild */
+            z-index: 10; /* Stellt sicher, dass das Bild über anderen Elementen liegt */
+        }
+
+</style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+   <!-- Header: Kopfleiste der Seite -->
+   <header>
+       <h1>Autopräsentationen</h1>
+       <p>Stil, Eleganz, Klasse</p>
+   </header>
+
+   <!-- Navigation: Navigationsbereich der Seite -->
+
+   <nav>
+       <ul>
+           <li><a href="Unterseite Josia.html">Porsche 992 GT3 RS</a></li>
+           <li><a href="Unterseite Vivian.html">Mazda Miata</a></li>
+           <li><a href="Unterseite Leyla.html">Auto 1</a></li>
+           <li><a href="Unterseite Niklas.html">Auto 2</a></li>
+       </ul>
+   </nav>
+
+
+   <!-- Hauptinhalt der Seite -->
+   <main>
+
+       <!-- Seitlicher Bereich -->
+
+       <!-- Hauptartikelbereich -->
+       <article>
+           <section id="section1">
+               <h2>Faszination Automobil</h2>
+
+               <p>Das Automobil hat seit seiner Erfindung eine einzigartige Faszination auf die Menschen ausgeübt. Für viele verkörpert es Freiheit und Unabhängigkeit – das Gefühl, jederzeit und überall hinfahren zu können, unabhängig von Fahrplänen oder Entfernungen. Diese Mobilität revolutionierte das Leben, ermöglichte neue Arbeits- und Freizeitmöglichkeiten und führte zu einer vernetzten Welt, die wir uns ohne Autos kaum mehr vorstellen können.
+
+                  Die Begeisterung für Autos geht jedoch weit über ihren praktischen Nutzen hinaus. Autos sind auch ein Symbol für technischen Fortschritt und Innovation. Besonders in den letzten Jahrzehnten hat die Automobilindustrie mit der Entwicklung von Elektrofahrzeugen, selbstfahrenden Autos und immer intelligenteren Assistenzsystemen neue Maßstäbe gesetzt. Für Auto-Enthusiasten bieten sie oft die perfekte Kombination aus Ingenieurskunst und Design. Die Wahl des Autos ist oft eine persönliche Ausdrucksform: Geschwindigkeit, Komfort, Luxus oder Abenteuer – das Auto wird zum Spiegel des eigenen Lebensstils.
+                  
+                  Auch das Fahrgefühl selbst spielt eine wichtige Rolle. Die Kontrolle über ein leistungsstarkes Fahrzeug und das Erlebnis, über Landstraßen oder Autobahnen zu gleiten, ist für viele ein unbeschreibliches Gefühl. 
+                  
+                  Letztlich ist das Automobil für viele Menschen weit mehr als ein Fortbewegungsmittel. Es verkörpert eine Lebensart, eine Leidenschaft und eine ständige Weiterentwicklung, die nicht nur die Art und Weise prägt, wie wir uns fortbewegen, sondern auch, wie wir unsere Freiheit und unser Selbstverständnis definieren.</p>
+
+            </section>
+           <section id="section7">
+             <h2>Ausgestellte Fahrzeuge</h2>
+               <ul>
+                 <li><a href="Unterseite Josia.html">Porsche 992 GT3 RS</a></li>
+                 <li><a href="Unterseite Vivian.html">Mazda Miata</a></li>
+                 <li><a href="Unterseite Leyla.html">Auto 1</a></li>
+                 <li><a href="Unterseite Niklas.html">Auto 2</a></li>
+                 
+               </ul>
+           </section>
+
+      <!--     <section id="section8">
+               <h2>Terminvereinbarung
+               </h2>
+               <p>Bei Interesse vereinbaren Sie hier einen Termin mit uns. Wir freuen uns auf Sie!</p>
+               <form>
+                 <label for="termin">Wähle einen Termin:</label>
+                 <input type="date" id="termin" name="termin">
+                 <input type="submit" value="Termin buchen">
+               </form> -->
+
+
+           </section>
+
+           <footer>
+               <p>Impressum: Erstellt von Carla und Leyla - HTML5 Beispielseite. Erweitert von Leyla, Vivian, Niklas und Josia</p>
+               <p>&copy; November 2024</p>
+           </footer>
+       </article>
+   </main>
+
+</body>
+</html>
