@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML5 Neue Elemente</title>
+   <link rel="stylesheet" href="Navigationsseite 2.css">
+   <!-- Google Fonts für Montserrat einbinden -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+   <style>
+      .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+      }
+      .numbers {
+         display: flex;
+         gap: 10px;
+         font-size: 10em;
+      }
+      .number {
+         width: 200px;
+         height: 200px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-weight: bold;
+         color: #d9e2ec; /* Heller Blauton für Text */
+         background-color: rgba(15, 20, 40, 0.8); /* Dunkelblauer Hintergrund */
+         text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Schatten */
+         animation: rotate 1s linear infinite;
+         border-radius: 50%; /* Runde Nummern */
+         border: 1px solid #2f4e78; /* Dunkler Rand */
+      }
+      .text {
+         font-size: 1em;
+         text-align: center;
+         color: #d9e2ec;
+      }
+      /* Animation für das Rotieren */
+      @keyframes rotate {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+      }
+   </style>
+</head>
+
+<body>
+
+   <header class="header">
+      <video autoplay muted loop id="headerVideo">
+         <source src="Bildschirmaufnahme 2024-11-07 um 10.35.15.mov" type="video/mp4">
+      </video>
+      <div class="fade-overlay"></div> <!-- Overlay für Fading-Effekt -->
+      <div class="header-text">
+         <h1>Autopräsentationen</h1>
+         <p>Stil, Eleganz, Klasse.</p>
+      </div>
+   </header>
+
+<body>
+
+
+   <!-- Navigation: Navigationsbereich der Seite -->
+
+   <nav class="navbar">
+       <ul>
+           <li><a href="Unterseite Josia.html">Porsche 992 GT3 RS</a></li>
+           <li><a href="Unterseite Vivian.html">Mazda Miata</a></li>
+           <li><a href="Unterseite Leyla.html">Auto 1</a></li>
+           <li><a href="Unterseite Niklas.html">Auto 2</a></li>
+           <li class="dropdown">
+            <a href="testnavigation.js" class="dropbtn">Terminvereinbarung</a>
+            <div class="dropdown-content">
+                <form>
+                    <label for="termin">Wähle einen Termin:</label>
+                    <input type="date" id="termin" name="termin">
+                    <input type="submit" value="Termin buchen">
+                </form>
+            </div>
+        </li>
+       </ul>
+   </nav>
+
+
+   <!-- Hauptinhalt der Seite -->
+   <main class="main">
+
+       <!-- Seitlicher Bereich -->
+
+       <!-- Hauptartikelbereich -->
+       <article>
+         <section id="section1">
+            <h2>Faszination Automobil</h2>
+
+            <p>Das Automobil hat seit seiner Erfindung eine einzigartige Faszination auf die Menschen ausgeübt. Für viele verkörpert es Freiheit und Unabhängigkeit – das Gefühl, jederzeit und überall hinfahren zu können, unabhängig von Fahrplänen oder Entfernungen. Diese Mobilität revolutionierte das Leben, ermöglichte neue Arbeits- und Freizeitmöglichkeiten und führte zu einer vernetzten Welt, die wir uns ohne Autos kaum mehr vorstellen können.</p>
+
+            <p>Die Begeisterung für Autos geht jedoch weit über ihren praktischen Nutzen hinaus. Autos sind auch ein Symbol für technischen Fortschritt und Innovation. Besonders in den letzten Jahrzehnten hat die Automobilindustrie mit der Entwicklung von Elektrofahrzeugen, selbstfahrenden Autos und immer intelligenteren Assistenzsystemen neue Maßstäbe gesetzt.</p>
+
+            <p>Für Auto-Enthusiasten bieten sie oft die perfekte Kombination aus Ingenieurskunst und Design. Die Wahl des Autos ist oft eine persönliche Ausdrucksform: Geschwindigkeit, Komfort, Luxus oder Abenteuer – das Auto wird zum Spiegel des eigenen Lebensstils.</p>
+
+            <p>Auch das Fahrgefühl selbst spielt eine wichtige Rolle. Die Kontrolle über ein leistungsstarkes Fahrzeug und das Erlebnis, über Landstraßen oder Autobahnen zu gleiten, ist für viele ein unbeschreibliches Gefühl.</p>
+
+            <p>Letztlich ist das Automobil für viele Menschen weit mehr als ein Fortbewegungsmittel. Es verkörpert eine Lebensart, eine Leidenschaft und eine ständige Weiterentwicklung, die nicht nur die Art und Weise prägt, wie wir uns fortbewegen, sondern auch, wie wir unsere Freiheit und unser Selbstverständnis definieren.</p>
+         </section>
+
+
+           <section id="section10">
+           <p>Das Automobil hat seit seiner Erfindung eine einzigartige Faszination auf die Menschen ausgeübt.</p>
+           <p>Für viele verkörpert es Freiheit und Unabhängigkeit – das Gefühl, jederzeit und überall hinfahren zu können, unabhängig von Fahrplänen oder Entfernungen.</p>
+           <p>Diese Mobilität revolutionierte das Leben, ermöglichte neue Arbeits- und Freizeitmöglichkeiten und führte zu einer vernetzten Welt, die wir uns ohne Autos kaum mehr vorstellen können.</p>
+            <p>Die Begeisterung für Autos geht jedoch weit über ihren praktischen Nutzen hinaus.</p>
+            <p>Autos sind auch ein Symbol für technischen Fortschritt und Innovation. Besonders in den letzten Jahrzehnten hat die Automobilindustrie mit der Entwicklung von Elektrofahrzeugen, selbstfahrenden Autos und immer intelligenteren Assistenzsystemen neue Maßstäbe gesetzt.</p>
+            <p> Für Auto-Enthusiasten bieten sie oft die perfekte Kombination aus Ingenieurskunst und Design.</p>
+            <p>Die Wahl des Autos ist oft eine persönliche Ausdrucksform: Geschwindigkeit, Komfort, Luxus oder Abenteuer – das Auto wird zum Spiegel des eigenen Lebensstils.</p>
+
+            <p>Auch das Fahrgefühl selbst spielt eine wichtige Rolle.</p>
+            <p>Die Kontrolle über ein leistungsstarkes Fahrzeug und das Erlebnis, über Landstraßen oder Autobahnen zu gleiten, ist für viele ein unbeschreibliches Gefühl.</p>
+            <p>Letztlich ist das Automobil für viele Menschen weit mehr als ein Fortbewegungsmittel. Es verkörpert eine Lebensart, eine Leidenschaft und eine ständige Weiterentwicklung, die nicht nur die Art und Weise prägt, wie wir uns fortbewegen, sondern auch, wie wir unsere Freiheit und unser Selbstverständnis definieren.</p>
+            </section>
+
+
+            <section id="section7">
+               <h2>Ausgestellte Fahrzeuge</h2>
+                 <ul>
+                   <li><a href="Unterseite Josia.html">Porsche 992 GT3 RS</a></li>
+                   <li><a href="Unterseite Vivian.html">Mazda Miata</a></li>
+                   <li><a href="Unterseite Leyla.html">Auto 1</a></li>
+                   <li><a href="Unterseite Niklas.html">Auto 2</a></li>
+
+                 </ul>
+             </section>
+
+           <footer>
+               <p>Impressum: Erstellt Josia, Vivian, Niklas und Leyla.</p>
+               <p>&copy; November 2024</p>
+           </footer>
+       </article>
+   </main>
+
+   <script src="testnavigation.js"></script>
+   <script src="testrotation.js"></script>
+
+
+</body>
+</html>
