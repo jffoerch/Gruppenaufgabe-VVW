@@ -11,7 +11,7 @@ body {
 
    padding: o;
 
-   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-3-scaled.jpg?class=xl');
+   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Big_bobby_car_rot.JPG/1200px-Big_bobby_car_rot.JPG');
 
    background-size: cover;
 
@@ -49,7 +49,7 @@ body::before {
 
 header {
 
-   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-27-scaled.jpg?class=ml');
+   background-image: url('https://sn-prod.s3.amazonaws.com/article-image/5b925ae507af976ad907750e4c9cea535a24c55e/64fefbb58c4fd/detail_resize.jpg');
 
    background-size: cover;
 
