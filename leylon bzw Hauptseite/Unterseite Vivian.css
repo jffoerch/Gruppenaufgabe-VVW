@@ -1,0 +1,282 @@
+/* Allgemeine Einstellungen */
+body {
+   font-family: 'Montserrat', sans-serif;
+   color: #d9e2ec; /* Hellerer Blauton für Text */
+   background-color: rgba(15, 20, 40, 0.9); /* Dunkelblauer Hintergrund */
+   margin: 0;
+   padding: 0;
+  
+   background-image: url('https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/10/safeimagekit-resized-img-9-1.jpeg');
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+}
+
+/* Halbtransparente Überlagerung für Lesbarkeit */
+body::before {
+   content: "";
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(15, 20, 40, 0.9);
+   z-index: -1;
+}
+
+/* Styling für Header mit Banner-Bild */
+header {
+   background-image: url('https://hips.hearstapps.com/hmg-prod/images/1990-mazda-mx-5-miata-bat-105-664e2c563ceff.jpg?crop=1.00xw:0.845xh;0,0.0983xh&resize=640:*');
+   background-size: cover;
+   background-position: center;
+   background-blend-mode: overlay;
+   background-color: rgba(15, 20, 40, 0.9);
+   color: #d9e2ec;
+   padding: 10em;
+   text-align: center;
+   margin-bottom: 1em;
+}
+
+header h1 {
+   margin: 0;
+   font-size: 2.5em;
+   color: #d9e2ec;
+}
+
+header p {
+   font-size: 1em;
+   color: #d9e2ec;
+}
+
+/* Navigation als horizontale Leiste */
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 0.5em;
+   background-color: rgba(15, 20, 40, 0.9);
+   padding: 1em;
+   margin: 0;
+   border-top: 1px solid #d9e2ec;
+   border-bottom: 1px solid #d9e2ec;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 0;
+   gap: 0.5em;
+}
+
+nav li {
+   margin: 0;
+}
+
+nav a {
+   display: inline-block;
+   padding: 0.5em 1em;
+   background-color: rgba(15, 20, 40, 0.9);
+   color: #d9e2ec;
+   text-decoration: none;
+   border: 1px solid #d9e2ec;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+   background-color: #d9e2ec;
+   color: #327dd3;
+}
+
+/* Stil für das Input-Feld (Typ Datum) */
+label {
+   font-size: 1.2em;
+   color: #d9e2ec;
+   display: block;
+   margin-bottom: 0.5em;
+}
+
+input[type="date"] {
+   font-size: 1em;
+   padding: 0.5em;
+   width: 100%;
+   max-width: 300px;
+   color: #d9e2ec;
+   background-color: #d9e2ec;
+}
+
+input[type="date"]::placeholder {
+   color: #d9e2ec;
+}
+
+input[type="date"]:focus {
+   border-color: #d9e2ec;
+}
+
+/* Weitere Layout-Elemente */
+main {
+   display: flex;
+   padding: 1em;
+}
+
+aside {
+   width: 20%;
+   color: #d9e2ec;
+   padding: 1em;
+   margin-right: 1em;
+   background-color: rgba(15, 20, 40, 0.9);
+   border: 1px solid #d9e2ec;
+}
+
+article {
+   width: 75%;
+   padding: 1em;
+   background-color: rgba(15, 20, 40, 0.9);
+   border: 1px solid #d9e2ec;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   border: 2px solid #d9e2ec;
+}
+
+video {
+   width: 100%;
+   height: auto;
+}
+
+/* Link Style */
+a {
+   color: #d9e2ec;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #3685df;
+}
+/* Dropdown-Grundstil */
+.dropdown {
+   position: relative;
+   display: inline-block;
+}
+.dropbtn {
+   display: flex;
+   justify-content: center;
+   gap: 0.5em;
+   background-color: rgba(15, 20, 40, 0.9);
+   padding: 1em;
+   margin: 0;
+   border-top: 1px solid #d9e2ec;
+   border-bottom: 1px solid #d9e2ec;
+}
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgba(15, 20, 40, 0.9);
+   min-width: 250px;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   padding: 1em;
+}
+.dropdown-content form {
+   display: flex;
+   flex-direction: column;
+}
+input[type="date"], input[type="submit"] {
+   margin: 0.5em 0;
+   padding: 0.5em;
+}
+/* Dropdown anzeigen bei Hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+/* Dropdown-Styling */
+.dropdown {
+   position: relative;
+   display: flex;
+}
+
+.dropbtn {
+   display: flex;
+   padding: 0.5em 1em;
+   background-color: rgba(15, 20, 40, 0.9);
+   color: #e0dacd;
+   text-decoration: none;
+   border: 1px solid #425544;
+   transition: background-color 0.3s, color 0.3s;
+   width: 100%; /* Gleiche Breite wie die anderen Links */
+   text-align: center;
+}
+
+/* Dropdown-Inhalte */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: rgba(15, 20, 40, 0.9);
+   min-width: 250px; /* Passe die Breite nach Bedarf an */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+   padding: 1em;
+   top: 100%; /* Hier wird das Dropdown-Menü direkt unter dem Button angezeigt */
+   right: -25%; /* Stellt sicher, dass das Dropdown mit dem Button ausgerichtet ist */
+   flex-direction: column; /* Stellt sicher, dass der Inhalt vertikal angeordnet ist */
+   justify-content: center; /* Zentriert den Inhalt vertikal */
+   align-items: center; /* Zentriert den Inhalt horizontal */
+
+}
+
+/* Styling der Dropdown-Links */
+.dropdown-content form {
+/*    display: flex;
+   flex-direction: column; */
+   margin: 0;
+   text-align: center; /* Wenn du möchtest, dass das Formular selbst auch zentriert wird */
+}
+
+
+input[type="date"], input[type="submit"] {
+   margin: 0.5em 0;
+   padding: 0.5em;
+}
+
+/* Dropdown anzeigen beim Hovern */
+.dropdown:hover .dropdown-content {
+   display: flex;
+}
+      /* Container für die Collage */
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Genau drei Spalten, die sich flexibel anpassen */
+            flex-wrap: wrap;
+            gap: 5px;
+            justify-items: center;
+        }
+        /* Container für jedes Bild */
+        .collage-item {
+            width: 100%; /* Feste Breite für das Zuschneiden */
+            aspect-ratio: 1; /* Stellt sicher, dass die Bilder quadratisch bleiben */
+            overflow: visible; /* Versteckt Teile des Bildes, die über den Rahmen hinausgehen */
+            position: relative;
+            
+        }
+        /* Bildstil */
+        .collage-item img {
+            width: 100%; /* passt Bild an Container an */
+            height: 100%;
+            object-fit:cover;
+            transition: all 0.8s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /* Hover-Effekt */
+        .collage-item:hover img {
+            width: auto; /* Stellt ursprüngliche Bildgröße wieder her */
+            height: auto;
+            max-width: 80vw; /* Begrenzung der Breite auf 80% des Viewports */
+            max-height: 80vh; /* Begrenzung der Höhe auf 80% des Viewports */
+            top: 50%; /* Mitte des Bildschirms */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Positioniert das Bild */
+            z-index: 10; /* Stellt sicher, dass das Bild über anderen Elementen liegt */
+        }
