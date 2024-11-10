@@ -1,471 +1,217 @@
 /* Allgemeine Einstellungen */
-
 body {
-
-   font-family: Georgia, serif;
-
-   color: #e0dacd;
-
-
-   margin: 0;
-
-   padding: o;
-
-   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-3-scaled.jpg?class=xl');
-
-   background-size: cover;
-
-   background-attachment: fixed;
-
-   background-position: center;
-
-}
-
-
-/* Halbtransparente Überlagerung für Lesbarkeit */
-
-body::before {
-
-   content: "";
-
-   position: fixed;
-
-   top: 0;
-
-   left: 0;
-
-   width: 100%;
-
-   height: 100%;
-
-   background-color: rgba(10, 36, 26, 0.7);
-
-   z-index: -1;
-
-}
-
-
-/* Styling für Header mit Banner-Bild */
-
-header {
-
-   background-image: url('https://cdn.elferspot.com/wp-content/uploads/2024/11/01/porsche-993-turbo-27-scaled.jpg?class=ml');
-
-   background-size: cover;
-
-   background-position: center;
-
-   background-blend-mode: overlay;
-
-   background-color: rgba(10, 36, 26, 0.7);
-
-   color: #e0dacd;
-
-   padding: 10em;
-
-   text-align: center;
-
-   margin-bottom: 1em;
-
-}
-
-
-header h1 {
-
-   margin: 0;
-
-   font-size: 2.5em;
-
-   color: #e0dacd;
-
-}
-
-
-header p {
-
-   font-size: 1em;
-
-   color: #c5c8b5;
-
-}
-
-
-/* Navigation als horizontale Leiste */
-
-nav {
-
-   display: flex;
-
-   justify-content: center;
-
-   gap: 0.5em;
-
-   background-color: rgba(15, 50, 37, 0.9);
-
-   padding: 1em;
-
-   margin: 0;
-
-   border-top: 1px solid #425544;
-
-   border-bottom: 1px solid #425544;
-
-}
-
-
-nav ul {
-
-   list-style: none;
-
-   display: flex;
-
-   padding: 0;
-
-   margin: 0;
-
-   gap: 0.5em;
-
-}
-
-
-nav li {
-
-   margin: 0;
-
-}
-
-
-nav a {
-
-   display: inline-block;
-
-   padding: 0.5em 1em;
-
-   background-color: rgba(10, 36, 26, 0.8);
-
-   color: #e0dacd;
-
-   text-decoration: none;
-
-   border: 1px solid #425544;
-
-   transition: background-color 0.3s, color 0.3s;
-
-}
-
-
-nav a:hover {
-
-   background-color: #425544;
-
-   color: #e0dacd;
-
-}
-
-
-/* Stil für das Input-Feld (Typ Datum) */
-
-label {
-
-   font-size: 1.2em;
-
-   color: #8ab07b;
-
-   display: block;
-
-   margin-bottom: 0.5em;
-
-}
-
-
-input[type="date"] {
-
-   font-size: 1em;
-
-   padding: 0.5em;
-
-   width: 100%;
-
-   max-width: 300px;
-
-   color: #e0dacd;
-
-   background-color: #1f3b2b;
-
-}
-
-
-input[type="date"]::placeholder {
-
-   color: #8ab07b;
-
-}
-
-
-input[type="date"]:focus {
-
-   border-color: #8ab07b;
-
-}
-
-
-/* Weitere Layout-Elemente */
-
-main {
-
-   display: flex;
-
-   padding: 1em;
-
-}
-
-
-aside {
-
-   width: 20%;
-
-   color: #c5c8b5;
-
-   padding: 1em;
-
-   margin-right: 1em;
-
-   background-color: rgba(10, 36, 26, 0.8);
-
-   border: 1px solid #425544;
-
-}
-
-
-article {
-
-   width: 75%;
-
-   padding: 1em;
-
-   background-color: rgba(10, 36, 26, 0.8);
-
-   border: 1px solid #425544;
-
-}
-
-
-img {
-
-   max-width: 100%;
-
-   height: auto;
-
-   border: 2px solid #4a5a4f;
-
-}
-
-
-video {
-
-   width: 100%;
-
-   height: auto;
-
-}
-
-
-/* Link Style */
-
-a {
-
-   color: #c5c8b5;
-
-   text-decoration: none;
-
-}
-
-
-a:hover {
-
-   color: #e0dacd;
-
-}
-/* Dropdown-Grundstil */
-.dropdown {
-   position: relative;
-   display: inline-block;
-}
-
-.dropbtn {
-   display: flex;
-
-   justify-content: center;
-
-   gap: 0.5em;
-
-   background-color: rgba(15, 50, 37, 0.9);
-
-   padding: 1em;
-
-   margin: 0;
-
-   border-top: 1px solid #425544;
-
-   border-bottom: 1px solid #425544
-
-}
-
-.dropdown-content {
-   display: none;
-   position: absolute;
-   background-color: rgba(10, 36, 26, 0.9);
-   min-width: 250px;
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-   z-index: 1;
-   padding: 1em;
-}
-
-.dropdown-content form {
-   display: flex;
-   flex-direction: column;
-}
-
-input[type="date"], input[type="submit"] {
-   margin: 0.5em 0;
-   padding: 0.5em;
-}
-
-/* Dropdown anzeigen bei Hover */
-.dropdown:hover .dropdown-content {
-   display: block;
-}
-/* Dropdown-Styling */
-
-.dropdown {
-
-   position: relative;
-
-   display: flex;
-
-}
-
-
-.dropbtn {
-
-   display: flex;
-
-   padding: 0.5em 1em;
-
-   background-color: rgba(10, 36, 26, 0.8);
-
-   color: #e0dacd;
-
-   text-decoration: none;
-
-   border: 1px solid #425544;
-
-   transition: background-color 0.3s, color 0.3s;
-
-   width: 100%; /* Gleiche Breite wie die anderen Links */
-
-   text-align: center;
-
-}
-
-
-/* Dropdown-Inhalte */
-
-.dropdown-content {
-
-   display: none;
-
-   position: absolute;
-
-   background-color: rgba(10, 36, 26, 0.9);
-
-   min-width: 250px; /* Passe die Breite nach Bedarf an */
-
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-
-   z-index: 1;
-
-   padding: 1em;
-
-   top: 100%; /* Hier wird das Dropdown-Menü direkt unter dem Button angezeigt */
-   right: -25%; /* Stellt sicher, dass das Dropdown mit dem Button ausgerichtet ist */
-
-   flex-direction: column; /* Stellt sicher, dass der Inhalt vertikal angeordnet ist */
-   justify-content: center; /* Zentriert den Inhalt vertikal */
-   align-items: center; /* Zentriert den Inhalt horizontal */
-
-
-}
-
-
-/* Styling der Dropdown-Links */
-
-.dropdown-content form {
-
-/*    display: flex;
-
-   flex-direction: column; */
-
-   margin: 0;
-   text-align: center; /* Wenn du möchtest, dass das Formular selbst auch zentriert wird */
-}
-
-
-
-input[type="date"], input[type="submit"] {
-
-   margin: 0.5em 0;
-
-   padding: 0.5em;
-
-}
-
-
-/* Dropdown anzeigen beim Hovern */
-
-.dropdown:hover .dropdown-content {
-
-   display: flex;
-
-}
-
-      /* Container für die Collage */
-        .collage {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Genau drei Spalten, die sich flexibel anpassen */
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-items: center;
-        }
-
-        /* Container für jedes Bild */
-        .collage-item {
-            width: 100%; /* Feste Breite für das Zuschneiden */
-            aspect-ratio: 1; /* Stellt sicher, dass die Bilder quadratisch bleiben */
-            overflow: visible; /* Versteckt Teile des Bildes, die über den Rahmen hinausgehen */
-            position: relative;
-            
-        }
-
-        /* Bildstil */
-        .collage-item img {
-            width: 100%; /* passt Bild an Container an */
-            height: 100%;
-            object-fit:cover;
-            transition: all 0.8s;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        /* Hover-Effekt */
-        .collage-item:hover img {
-            width: auto; /* Stellt ursprüngliche Bildgröße wieder her */
-            height: auto;
-            max-width: 80vw; /* Begrenzung der Breite auf 80% des Viewports */
-            max-height: 80vh; /* Begrenzung der Höhe auf 80% des Viewports */
-            top: 50%; /* Mitte des Bildschirms */
-            left: 50%;
-            transform: translate(-50%, -50%); /* Positioniert das Bild */
-            z-index: 10; /* Stellt sicher, dass das Bild über anderen Elementen liegt */
-        }
+    font-family: 'Montserrat', sans-serif;
+    color: #d9e2ec; /* Hellerer Blauton für Text */
+    background-color: rgba(15, 20, 40, 0.9); /* Dunkelblauer Hintergrund */
+    margin: 0;
+    padding: 0;
+ }
+ 
+ /* Halbtransparente Überlagerung für Lesbarkeit */
+ body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 20, 40, 0.9);
+    z-index: -1;
+ }
+ 
+ header {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+ }
+ 
+ #headerVideo {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transform: translate(-50%, -50%);
+     z-index: -2;
+ }
+ 
+ .fade-overlay {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 30%;
+     background: linear-gradient(to bottom, transparent, rgba(15, 20, 40, 0.9));
+     z-index: -1;
+ }
+ 
+ .header-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #d9e2ec;
+     text-align: center;
+     z-index: 1;
+ }
+ 
+ .header-text h1 {
+     font-size: 3em;
+     margin: 0;
+ }
+ 
+ .header-text p {
+     font-size: 1.5em;
+ }
+ 
+ .navbar {
+     width: 100%;
+     background-color: rgba(15, 20, 40, 0.8);
+     backdrop-filter: blur(10px);
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+     border: 1px solid rgba(15, 20, 40, 0.7);
+     position: sticky;
+     top: 0;
+     text-align: center;
+     padding: 15px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 10;
+     transition: background-color 0.3s ease;
+     visibility: hidden;
+ }
+ 
+ .navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .navbar li{
+    margin: 0 15 px;
+    position: relative;
+ }
+ 
+ .sticky-active .navbar {
+     visibility: visible;
+ }
+ 
+ nav a {
+     display: inline-block;
+     padding: 0.5em 1em;
+     background-color: rgba(15, 20, 40, 0.8);
+     color: #d9e2ec;
+     text-decoration: none;
+     border: 1px solid #2f4e78;
+     transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ nav a:hover {
+     background-color: #2f4e78;
+     color: #d9e2ec;
+ }
+ 
+ /* Stil für das Input-Feld (Typ Datum) */
+ label {
+    font-size: 1.2em;
+    color: #729bbd;
+    display: block;
+    margin-bottom: 0.5em;
+ }
+ 
+ input[type="date"] {
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    color: #d9e2ec;
+    background-color: #1a2b4d;
+ }
+ 
+ input[type="date"]::placeholder {
+    color: #729bbd;
+ }
+ 
+ input[type="date"]:focus {
+    border-color: #729bbd;
+ }
+ 
+ a:hover {
+    color: #d9e2ec;
+ }
+ 
+ /* Dropdown-Grundstil */
+ .dropdown-content {
+    display: none; /* Verstecke das Dropdown-Menü standardmäßig */
+    position: absolute;
+    background-color: rgba(15, 20, 40, 0.9);
+    width: 100%;
+    top: 100%; /* Setze das Menü direkt unter den Button */
+    left: -5%;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    font-size: smaller;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center; /* Zentriert vertikal */
+    text-align: center;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+    display: block;
+ }
+ 
+ /* Weitere Layout-Elemente */
+ main {
+    display: flex;
+    padding: 1em;
+ }
+ 
+ aside, article {
+    padding: 1em;
+    background-color: rgba(15, 20, 40, 0.8);
+    border: 1px solid rgba(15, 20, 40, 0.7);
+ }
+ 
+ /* Link Style */
+ a {
+    color: #729bbd;
+    text-decoration: none;
+ }
+ 
+ /* Bildstil */
+ .collage-item img {
+    object-fit: cover;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
+ 
+ .collage-item:hover img {
+    max-width: 80vw;
+    max-height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+ }
+ 
+ /* Slideshow */
+ .slideshow-container {
+     background-color: rgba(15, 20, 40, 0.9);
+ }
+ 
+ /* Punkte */
+ .dot {
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
